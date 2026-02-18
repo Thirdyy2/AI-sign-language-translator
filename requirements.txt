@@ -1,0 +1,7 @@
+tensorflow
+opencv-python
+mediapipe
+numpy
+pandas
+keras
+matplotlib
